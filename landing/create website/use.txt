@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEB PRAROZ</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="logo.png">
+			</div>
+			<ul>
+				<li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="#about"><i class="fa fa-info-circle"></i>About</a></li>
+				<li><a href="https://www.tasteofhome.com/collection/easy-desserts-with-5-ingredients-or-less/">Dessert</a></li>
+				<li><a href="https://www.tasteofhome.com/collection/30-appetizer-recipes-ready-in-15-minutes/">Appetizers</a></li>
+				<li><a href="https://www.tasteofhome.com/collection/incredible-5-star-pasta-recipes/">Pasta</a></li>
+				<li><a href="https://www.tasteofhome.com/collection/top-salad-recipes/">Salad</a></li>
+				<li><a href="https://tasteofhome.com/collection/top-10-burger-recipes/">Burger</a></li>
+				<li><a href="https://www.tasteofhome.com/collection/top-10-pizza-recipes/"><i class="fa-solid fa-pizza-slice"></i>Pizza</a></li>
+				<li><a href="https://www.allrecipes.com/recipes/"> <i class="fa-solid fa-bowl-food"></i>More Recipes</a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<h1>HOMIE RECIPES</h1>
+		</div>
+		<div class="button">
+			<a href="#" class="btn">WATCH VIDEO</a>
+			<a href="basicskills.html" class="btn">BASIC SKILLS</a>
+		</div>
+	</header>
+
+	<!-- About Section -->
+	<section id="about" class="about">
+		<div class="container">
+			<h2>About Us</h2>
+			<p>Welcome to Homie Recipes, your ultimate destination for culinary inspiration. We are passionate about food and dedicated to bringing you mouthwatering recipes, cooking tips, and delightful culinary experiences.</p>
+			<p>Our mission is to make cooking fun, easy, and accessible to everyone. Whether you're a seasoned chef or just starting in the kitchen, we have something delicious in store for you.</p>
+		</div>
+	</section>
+
+	<!-- Your other sections and content can follow here -->
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Homies</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<script src="https://kit.fontawesome.com/0558d8a369.js" crossorigin="anonymous"></script> 
+
+</head>
+<body>
+	<header>
+		<div class="main">
+		<div class="logo">
+			<img src="logo1.png">
+		</div>
+		
+		 <ul>
+		 <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+		 <li><a href="#about"><i class="fa-solid fa-circle-exclamation"></i>About</a></li>
+		 <li><a href="https://www.tasteofhome.com/collection/easy-desserts-with-5-ingredients-or-less/"><i class="fa-solid fa-stroopwafel"></i>Dessert</a></li>
+		 <li><a href="https://www.tasteofhome.com/collection/incredible-5-star-pasta-recipes/"><i class="fa-solid fa-bowl-rice"></i>Pasta</a></li>
+		 <li><a href="https://www.tasteofhome.com/collection/top-salad-recipes/"><i class="fa-solid fa-cookie"></i>Salad</a></li>
+		 <li><a href="https://tasteofhome.com/collection/top-10-burger-recipes/"><i class="fa-solid fa-burger"></i>Burger</a></li>
+		 <li><a href="https://www.tasteofhome.com/collection/top-10-pizza-recipes/"><i class="fa-solid fa-pizza-slice"></i>Pizza</a></li>
+		 <li><a href="https://www.allrecipes.com/recipes/"> <i class="fa-solid fa-bowl-food"></i>More Recipes</a>
+		 <li><a href="#contact"><i class="fa-solid fa-phone-volume"></i>Contact</a></li>
+		 		 
+		</ul>
+
+		 </div>
+		 <div class="title">
+		 	<h1>HOMIE RECIPES</h1>
+		 </div>
+		 <div class="button">
+		 	
+		 	<a href="basicskills.html" class="btn">BASIC SKILLS</a>
+		 	
+		 </div>
+
+	</header>
+			 <section id="about" class="about">
+				<div class="container">
+					<h2>About Us</h2>
+					<p>Welcome to Homie Recipes, your ultimate destination for culinary inspiration. We are passionate about food and dedicated to bringing you mouthwatering recipes, cooking tips, and delightful culinary experiences.</p>
+					<p>Our mission is to make cooking fun, easy, and accessible to everyone. Whether you're a seasoned chef or just starting in the kitchen, we have something delicious in store for you.</p>
+				</div>
+			</section>
+			<section id="contact" class="contact">
+				<div id="contact">
+					<div class="container">
+						<div class="row">
+							<div class="contact-left">
+								<h1 class="sub-title">Contact</h1>
+								<p><i class="fa-solid fa-envelope"></i>homierecipes@gmail.com</p>
+								<p><i class="fa-solid fa-phone-volume"></i> 8978809651 </p>
+								<div class="social-icons">
+									<a href="https://www.facebook.com/profile.php?id=100086918520457"><i class="fa-brands fa-facebook"></i></a>
+									<a href="https://twitter.com/DVarshitha55415/"><i class="fa-brands fa-twitter-square"></i></a>
+									<a href="https://www.instagram.com/varsha.varsha.71"><i class="fa-brands fa-instagram"></i></a>
+									<a href="https://www.linkedin.com/in/varshitha-d-ab3372205"><i class="fa-brands fa-linkedin"></i></a>
+								</div>
+								
+							</div>
+							<div class="contact-right">
+								<form name="submit-to-google-sheet">
+									<input type="text" name="Name" placeholder="Your Name" required>
+									<input type="email" name="email" placeholder="Your Email" required>
+									<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+									<button type="submit" class="btn btn2">Submit</button>
+								</form>
+								<span id="msg"></span>
+							</div>
+						</div>
+					</div>
+					<div class="copyright">
+						<p>Copyright &copy; varsha<i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+			</section>
+			<script>
+				const scriptURL = 'https://script.google.com/macros/s/AKfycbxg6JPDj_LgPAqrcijlmoD1o8ize4c_q166JGwuwV7defjn7WT3HWjiEsJxuJTuLaLm/exec'
+				const form = document.forms['submit-to-google-sheet']
+				const msg=document.getElementById("msg")
+			  
+				form.addEventListener('submit', e => {
+				  e.preventDefault()
+				  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+					.then(response => {
+						msg.innerHTML="Message Sent Successfully"
+						setTimeout(function(){
+							msg.innerHTML=""
+						},5000)
+						form.reset()
+					})
+					.catch(error => console.error('Error!', error.message))
+				})
+			  </script>
+		
+
+</body>
+</html>
